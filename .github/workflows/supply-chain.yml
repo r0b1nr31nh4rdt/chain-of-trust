@@ -16,3 +16,6 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements-ci.txt
+
+      - name: Typosquatting scan
+        run: python check_typosquatting.py requirements-ci.txt
